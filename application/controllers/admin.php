@@ -19,7 +19,15 @@ class Admin extends CI_Controller {
 
     function home()
     {
-        $this->load->view('admin_home');
+        if($this->session->userdata('role')!='admin')
+        {
+ 
+          redirect('main/home');
+    }
+    else{
+       
+       $this->load->view('admin_home');
+    }
     }
     function add_competition()
     {
