@@ -1,0 +1,33 @@
+{
+  "require" : {
+    "silex/silex": "~1.1",
+    "monolog/monolog": "~1.7",
+	"ext-mysqli": "*",
+	"php": ">=5.2.4"
+  },
+  "require-dev": {
+    "heroku/heroku-buildpack-php": "*",
+    "heroku/topdesignr-master": "1.1.*"
+  },
+  "description": "The CodeIgniter framework",
+	"name": "codeigniter/framework",
+	"type": "project",
+	"homepage": "https://codeigniter.com",
+	"license": "MIT",
+	"support": {
+		"forum": "http://forum.codeigniter.com/",
+		"wiki": "https://github.com/bcit-ci/CodeIgniter/wiki",
+		"irc": "irc://irc.freenode.net/codeigniter",
+		"source": "https://github.com/bcit-ci/CodeIgniter"
+	},
+	"require":{
+	"../vendor":"autoload.php"
+	},
+	"require": {
+		"php": ">=5.2.4"
+	},
+	"suggest": {
+		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
+	}
+	
+}

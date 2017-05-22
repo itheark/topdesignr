@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase / 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+RewriteCond %{HTTP_HOST} ^app.herokuapp.com$ [NC]
+RewriteRule ^(.*)$ http://topdesignr.com/$1 [R=301,L]
+</IfModule>
