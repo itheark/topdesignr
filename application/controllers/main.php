@@ -81,7 +81,6 @@ class Main extends CI_Controller {
                         $salt = $this->user_model->generate_salt();
                         $new_pwd =$this->user_model->encrypt($salt,$this->input->post('pwd'));
                         $user = $this->user_model->new_user($salt,$new_pwd);
-                        $this->user_model->follow_admin($user);
 
                         redirect('main/login');
                     }

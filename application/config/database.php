@@ -50,28 +50,52 @@ $active_record = TRUE;
 
 
 // If running locally
-//$url = "mysql://aavn9fkyp0rl8z.cadu8kmbjhxb.us-west-2.rds.amazonaws.com:3306/topdesignr?reconnect=true";
+// $db['default']['hostname'] ='localhost';
+// $db['default']['username'] = 'root';
+// $db['default']['password'] = '';
+// $db['default']['database'] = 'topdesignr';
+// $db['default']['dbdriver'] = 'mysqli';
+// $db['default']['dbprefix'] = '';	
+// $db['default']['pconnect'] = FALSE;
+// $db['default']['db_debug'] = FALSE;
+// $db['default']['cache_on'] = FALSE;
+// $db['default']['cachedir'] = '';
+// $db['default']['char_set'] = 'utf8';
+// $db['default']['dbcollat'] = 'utf8_general_ci';
+// $db['default']['swap_pre'] = '';
+// $db['default']['autoinit'] = TRUE;
+// $db['default']['stricton'] = FALSE;
+
+
+
+//$url = "mysql://aad8fgw2mjvw8w.cm9ivbsxgjbs.us-east-1.rds.amazonaws.com:3306/topdesignr?reconnect=true";
 
 // Else, if running on Heroku
 //;if(isset($_ENV['CLEARDB_DATABASE_URL'])){
 //	$url = $_ENV['CLEARDB_DATABASE_URL'];
 //}
 // Parse connection url
-//$connection_info = parse_url($url);
+// $connection_info = parse_url($url);
 
-//define('DB_HOST', $connection_info['host']);
-//define('DB_DATABASE', substr($connection_info['path'], 1));
-//define('DB_USER', $connection_info['user']);
-//define('DB_PASS', $connection_info['pass']);
+// define('DB_HOST', $connection_info['host']);
+// define('DB_DATABASE', substr($connection_info['path'], 1));
+// define('DB_USER', $connection_info['user']);
+// define('DB_PASS', $connection_info['pass']);
+
+// $db['default']['hostname'] ='localhost';
+// $db['default']['username'] = 'root';
+// $db['default']['password'] = '';
+// $db['default']['database'] = 'topdesignr';
+// $db['default']['dbdriver'] = 'mysqli';
 
 
-
-
-$db['default']['hostname'] ='aa1b1e8pbrgn3hy.cadu8kmbjhxb.us-west-2.rds.amazonaws.com';
-$db['default']['username'] = 'itheark';
-$db['default']['password'] = 'achuachu1';
+$db['default']['hostname'] ='aad8fgw2mjvw8w.cm9ivbsxgjbs.us-east-1.rds.amazonaws.com:3306';
+$db['default']['username'] = 'topdesignr';
+$db['default']['password'] = 'authenticatE1';
 $db['default']['database'] = 'ebdb';
 $db['default']['dbdriver'] = 'mysqli';
+
+
 $db['default']['dbprefix'] = '';	
 $db['default']['pconnect'] = FALSE;
 $db['default']['db_debug'] = FALSE;

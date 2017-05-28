@@ -2,7 +2,7 @@
 		class Admin_model extends CI_Model
 		{
 			
-			function __construct()
+			function admin_model()
 			{
 				# code...
 				parent:: __construct();

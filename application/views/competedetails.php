@@ -12,7 +12,6 @@
     <link href="<?php echo base_url();?>/css/animate.min.css" rel="stylesheet"> 
 	<link href="<?php echo base_url();?>/css/main.css" rel="stylesheet">
 	<link href="<?php echo base_url();?>/css/responsive.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo base_url();?>/css/kc.fab.css">
 
     <!--[if lt IE 9]>
 	    <script src="js/html5shiv.js"></script>
@@ -235,12 +234,6 @@ $(document).ready(function(){
     </section>
      <?php } ?>
     <!--/#blog-->
-     <div class="kc_fab_wrapper">
-
-        
-        <div><button data-link-href="" data-link-target=""  class="kc_fab_main_btn" style="background-color:#03A9F4;"><span style="height: 60px; width: 60px; top: 21.4333px; left: 15.4333px;" class="ink animate"></span><span style="">+</span></button></div>
-
-</div>
 <footer id="footer">
         <div class="container">
             <div class="row">
@@ -284,61 +277,6 @@ $(document).ready(function(){
     <script type="text/javascript" src="<?php echo base_url();?>/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url();?>/js/lightbox.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url();?>/js/wow.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url();?>/js/main.js"></script>  
-    <script src="<?php echo base_url();?>/js/kc.fab.min.js"></script>
-    <script>
-            $(document).ready(function(){
-                var links = [
-                    {
-                        "bgcolor":"#03A9F4",
-                        "icon":"+"
-                    },
-                     {
-                        "url":"<?php echo site_url('main/post_upload') ?>",
-                        "bgcolor":"#C03035",
-                        "color":"white",
-                        "icon":"<i class='fa fa-trophy'></i>",
-                        "title" :"Host a Challenge"
-
-                        
-                    },
-                    
-                    {
-                        "url":"<?php echo site_url('main/post_upload') ?>",
-                        "bgcolor":"#FCB040",
-                        "color":"white",
-                        "icon":"<i class='fa fa-upload'></i>",
-                        "title" :"Upload a Creation"
-
-                        
-                    },
-                    {
-                        "url":"<?php echo site_url('main/post_upload') ?>",
-                        "bgcolor":"#D4C730",
-                        "color":"white",
-                        "icon":"<i class='fa fa-question'></i>",
-                        "title" :"Help Center"
-
-                        
-                    },
-
-                ]
-                $('.kc_fab_wrapper').kc_fab(links);
-            })
-        </script>
-        <script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script> 
+    <script type="text/javascript" src="<?php echo base_url();?>/js/main.js"></script>   
 </body>
 </html>

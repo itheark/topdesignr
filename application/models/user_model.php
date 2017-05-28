@@ -5,7 +5,7 @@
 class User_model extends CI_Model
 {
 	
-	function __construct()
+	function user_model()
 	{
 		# code...
 		parent:: __construct();
@@ -77,26 +77,8 @@ class User_model extends CI_Model
 		$this->db->select('user_id');
 		$this->db->from('user');
 		$this->db->where(array('uname'=> $this->input->post('uname')));
-		$id =$this->db->insert_id();
-		return $id;
-	}
-
-	function follow_admin($id)
-	{
-		$var = '1';
-		$this->load->database();
-		$data = array( 'user_id'=>$id,
-						'followee_id'=>$var
-						);
-		$this->db->insert('follow',$data);
-
-		$this->db->where('user_id',$id);
-		$this->db->set('following', 'following + 1', FALSE);
-		$this->db->update('user');
-
-		$this->db->where('user_id',$var);
-		$this->db->set('followers', 'followers + 1', FALSE);
-		$this->db->update('user');
+		$id = $this->db->get();
+		return $id->row_array();
 
 	}
 	function new_post()
