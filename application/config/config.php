@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
- $config['base_url']	= getenv('BASE_URL');
+ $config['base_url']	= 'http://ec2-13-126-239-80.ap-south-1.compute.amazonaws.com/topdesignr/';
 
 
 
