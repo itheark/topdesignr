@@ -65,7 +65,7 @@ $active_record = TRUE;
 //define('DB_PASS', $connection_info['pass']);
 $db['default']['hostname'] ='localhost';
 $db['default']['username'] = 'root';
-$db['default']['password'] = '';
+$db['default']['password'] = 'asd123##';
 $db['default']['database'] = 'topdesignr';
 
 
